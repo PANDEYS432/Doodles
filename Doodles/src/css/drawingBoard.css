@@ -1,0 +1,292 @@
+:root {
+    --primarycolor:hsl(179, 93%, 44%);
+    --blue:hsl(183, 100%, 35%);
+    --lightblue:hsl(183, 49%, 63%);
+    --secondarycolor:hsl(217, 10%, 25%);
+    --Backgroundcolor:hsl(216, 19%, 16%);
+    --white:hsl(0, 0%, 100%);
+    --darkishwhite:hsl(0, 0%, 78%);
+}
+*{
+    overflow-y: hidden;
+}
+.outerdiv_for_drawingboard{
+    position: relative;
+}
+
+.outerdiv_for_chat{
+    width:300px;
+    height:100vh;
+    background-color: var(--secondarycolor);
+    z-index: 2000;
+}
+
+.toolbox_div{
+    position: absolute;
+    left:21%;
+    background-color: white;
+    color:var(--blue);
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.undo_redo_div{
+    bottom:10px;
+}
+.undo_redo_div button{
+    margin-right: 10px;
+    border-style: none;
+    background-color: var(--primarycolor);
+    padding: 10px 20px;
+    color:white;
+    font-weight: 500;
+}
+
+label{
+    margin-right: 20px;
+}
+
+.clear_canvas_btn{
+    padding:12px 20px;
+    background-color: var(--primarycolor);
+    color:white;
+    border:none;
+    font-weight: 500;
+}
+
+.viewerimg{
+    
+    z-index: 10000;
+    position: absolute;
+}
+
+.onechatdiv{
+    background-color: var(--darkishwhite);
+    padding:5px;
+    display: flex;
+    white-space: normal;
+    overflow-x:hidden;
+    border-bottom: 3px solid white;
+}
+
+.onechatdiv p{
+    color:black;
+}
+
+.onechatdiv span{
+    color:black;
+    font-weight: 700;
+}
+
+.chatmsg{
+    color:var(--Backgroundcolor);
+    font-weight: 500;
+}
+.chatusername{
+    color:var(--blue);
+}
+
+.chatusernamediv{
+    flex:0.05;
+    overflow-x: hidden;
+}
+.chatmsgdiv{
+    flex:0.95;
+}
+
+.wordchosen{
+    color:var(--Backgroundcolor);
+    font-size: 15px;
+}
+
+.codewordDiv{
+    position: absolute;
+    left:30%;
+    bottom: 30px;
+    z-index: 1000000;
+}
+
+.codewordDiv p{
+    color:var(--Backgroundcolor);
+    font-size: 17px;
+}
+
+.gtime1{
+    color:white;
+}
+.gtimediv1{
+    background-color: var(--primarycolor);
+    position: absolute;
+    bottom: 30px;
+    right:370px;
+    padding: 10px 15px;
+}
+
+
+
+.correctanswerdiv{
+    background-color: #CFFFBD;
+    padding:5px;
+    display: flex;
+    white-space: normal;
+    overflow-x:hidden;
+    border-bottom: 3px solid white;
+}
+
+.kickingdiv{
+    background-color: #CFFFBD;
+    padding:5px;
+    display: flex;
+    white-space: normal;
+    overflow-x:hidden;
+    border-bottom: 3px solid white;
+}
+
+.correctanswerdiv p{
+    color:green;
+    font-weight:600;
+}
+
+.kickingdiv p{
+    color:blue;
+    font-weight:600;
+}
+.wordchosendiv{
+    margin-left: 280px;
+    background-color:var(--primarycolor);
+    padding: 10px 15px;
+}
+.wordchosendiv span{
+    font-weight: 700;
+    color:white;
+}
+.wordchosendiv p{
+    color:black;
+    font-weight: 500;
+}
+.gtimediv{
+    background-color: var(--primarycolor);
+    padding: 10px 15px;
+    margin-left: 60px;
+}
+.gtime{
+    color:white;
+}
+
+.roundresultdiv{
+    position: absolute;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    background-color: var(--Backgroundcolor);
+    opacity: 0.7;
+    z-index:100000000000;
+    flex-direction: column;
+    padding:50px;
+}
+
+.roundresult_innerdiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.roundresultdiv span{
+    font-weight: 600;
+    color:white;
+    text-transform: capitalize;
+    margin-right: 50px;
+}
+.notscored{
+    color:red;
+    font-size: 19px;
+}
+
+.scored{
+    color:green;
+    font-size: 19px;
+}
+
+.mousediv{
+    position: absolute;
+    z-index:1000000000000000000000;
+}
+.mousediv p{
+    color:var(--primarycolor);
+}
+.showstandings{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    background-color: var(--Backgroundcolor);
+    opacity: 0.7;
+    z-index: 10000000000000000000000;
+}
+.standings_outerdiv{
+    background-color: var(--Backgroundcolor);
+    /* opacity:0.7; */
+    opacity: 1;
+    display: flex;
+    width:100vw;
+    height:100vh;
+    z-index: 10000000000000000000000;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+}
+.standings_outerdiv p{
+    color:black;
+}
+
+.standings_innerdiv{
+    background-color: var(--Backgroundcolor);
+    margin-top: 200px;
+    width:600px;
+}
+
+.individual_standings{
+    display: flex;
+    padding:10px;
+}
+.standings_name{
+    flex:0.8;
+    padding: 2px;
+    font-weight: 700;
+}
+.standings_points{
+    flex:0.2;
+    padding: 2px;
+}
+
+.gold{
+    background-color: #d4af37;
+}
+
+.silver{
+    background-color:#666664 ;
+}
+
+.bronze{
+    background-color: 	#CD7F32;
+}
+
+.nomedal{
+    background-color: white;
+}
+
+.endgamebtn{
+    margin-top:40px;
+    padding:15px 30px;
+    width:fit-content;
+    background-color: var(--primarycolor);
+    color:var(--white);
+    font-size:18px;
+    font-weight: bold;
+    box-shadow: 0 0 1.5625rem 0.625rem var(--blue);
+    border: none;
+}
+
+

@@ -1,0 +1,128 @@
+:root {
+    --primarycolor:hsl(179, 93%, 44%);
+    --blue:hsl(183, 100%, 35%);
+    --lightblue:hsl(183, 49%, 63%);
+    --secondarycolor:hsl(217, 10%, 25%);
+    --Backgroundcolor:hsl(216, 19%, 16%);
+    --white:hsl(0, 0%, 100%);
+    --darkishwhite:hsl(0, 0%, 78%);
+}
+
+
+
+
+h1{
+    color:var(--white);
+    font-size:47px;
+    margin-bottom: 20px;
+}
+.outernav{
+    background-color:var(--secondarycolor);
+    display: flex;
+    padding:15px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerdiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    margin: 20px;
+    color:var(--primarycolor);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+h3{
+    color:var(--lightblue);
+}
+
+p{
+    color:var(--darkishwhite);
+    size:19px;
+}
+
+span{
+    color:var(--primarycolor)
+}
+
+.desimg{
+    height: 620px;
+}
+
+.logoimg{
+    height:40px;
+    margin-right: 7px;
+    filter:invert(100%);
+}
+
+.innerdesdiv{
+    display: flex;
+}
+
+.innerdesdiv1{
+    flex:0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:130px;
+}
+button{
+    cursor: pointer;
+}
+.loginbtn{
+    margin-top:40px;
+    padding:18px 43px;
+    width:fit-content;
+    background-color: var(--primarycolor);
+    color:var(--white);
+    font-size:18px;
+    font-weight: bold;
+    box-shadow: 0 0 1.5625rem 0.625rem var(--blue);
+    border: none;
+
+}
+
+.loginbtn:hover{
+    background-color:var(--lightblue)
+}
+
+.logoutbtn{
+    padding:11px 14px;
+    width:fit-content;
+    background-color: var(--primarycolor);
+    color:var(--white);
+    font-size:12.5px;
+    font-weight: bold;
+    border: none;
+}
+
+.logoutbtn:hover{
+    background-color:var(--lightblue)
+}
+
+.notificationbtn{
+    color:var(--primarycolor);
+    margin-right: 18px;
+    cursor:pointer;
+}
+
+.notification_singlediv{
+    background-color: var(--Backgroundcolor);
+    padding:13px;
+    justify-content: space-between;
+    width:100%;
+    display: flex;
+    margin-bottom:20px;
+}
+
+.notification_join_btn{
+    color:white;
+    background-color: var(--primarycolor);
+    padding:10px 18px;
+    border:none;
+}

@@ -1,0 +1,107 @@
+:root {
+    --primarycolor:hsl(179, 93%, 44%);
+    --blue:hsl(183, 100%, 35%);
+    --lightblue:hsl(183, 49%, 63%);
+    --secondarycolor:hsl(217, 10%, 25%);
+    --Backgroundcolor:hsl(216, 19%, 16%);
+    --white:hsl(0, 0%, 100%);
+    --darkishwhite:hsl(0, 0%, 78%);
+}
+
+
+.friends_scroll{
+    overflow-y:auto;
+}
+
+.profile_outerdiv{
+    display:flex;
+    padding: 20px;
+    height:100%;
+}
+
+.friends_list_div{
+    background-color: var(--secondarycolor);
+    padding:20px;
+    flex:0.18;
+    height:100%;
+}
+.friends_list_div h3{
+    margin-bottom: 20px;
+}
+
+.friend_div{
+    background-color: var(--Backgroundcolor);
+    display: flex;
+    margin:0px 0px 20px 0px;
+    padding:20px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend_div button{
+    background-color: #DC143C;
+    padding:5px;
+    border:none;
+    color:white;
+}
+
+.stats_div{
+    flex:0.82;
+    background-color: var(--secondarycolor);
+    padding:20px;
+    margin-left: 40px;
+}
+
+.summary_stats{
+    display: flex;
+    justify-content: center;
+}
+
+
+.stat_box{
+    background-color: var(--primarycolor);
+    padding:40px;
+    margin-right: 40px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat_box h2{
+    color:white;
+}
+.graph_div{
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line_chart{
+    background-color: var(--Backgroundcolor);
+    width:max-content
+}
+
+.pie_chart{
+    background-color: var(--Backgroundcolor);
+    width:max-content;
+    margin-left: 60px;
+}
+
+.search_users_div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.search_friend_input{
+    border:none;
+    width:200px;
+    height:40px;
+    padding:10px;
+}
+
+.friend_icon{
+    color:var(--primarycolor);
+    cursor:pointer;
+}
